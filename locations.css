@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 1);
+    width: 375px;
+    height: 64px;
+
+}
+
+nav h1 {
+    color: rgba(73, 85, 103, 1);
+    font-family: Space Mono;
+
+}
+
+.imgloc {
+
+}
+
+.imgmap {
+
+}
+
+#sect1 div p{
+    background-color: rgba(252, 183, 43, 0.15);
+}
+
+
+
+#sect1 p{
+    color: rgba(73, 85, 103, 1);
+    font-family: Space Mono;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1.0714285373687744px;
+    text-align: center;
+    margin: 22px 107.5px;
+}
+
+#sect2 h2{
+    color: rgba(73, 85, 103, 1);
+    font-family: Space Mono;
+font-size: 32px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: -1.4285714626312256px;
+text-align: center;
+
+}
+
+#sect2 p{
+    font-family: Lexend Deca;
+font-size: 15px;
+font-weight: 400;
+line-height: 25px;
+text-align: center;
+color: rgba(147, 156, 170, 1);
+
+}
+
+#sect2 div{
+    background-color: rgba(252, 183, 43, 1);
+    width: 180px;
+height: 53px;
+font-family: Space Mono;
+font-size: 15px;
+font-weight: 700;
+line-height: 25px;
+text-align: center;
+margin: 22px 107.5px;
+color: rgba(255, 255, 255, 1);
+
+}
+
+#sect3 h2{
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.4285714626312256px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+#sect3{
+    background-image: url(./img/Group\ 22.svg) ;width: 375px;
+    width: 375px;
+    height: 320px;
+    position: relative;
+    background-size: cover;
+
+    
+
+}
+
+#sect3 h2{
+    color: rgba(255, 255, 255, 1);
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.4285714626312256px;
+    text-align: center;
+    width: 100%;
+    position: absolute; /* Utilisation de la position absolue */
+    top: 50%; /* Pour centrer verticalement */
+    transform: translateY(-50%); /* Pour centrer exactement */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#appstore {
+    margin-bottom: 40px;
+    margin-right:12.86px ;
+}
+
+#gglplay{
+    margin-bottom: 40px;
+    margin-left: 12.86px;
+}
+
