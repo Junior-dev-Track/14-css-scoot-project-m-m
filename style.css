@@ -68,6 +68,11 @@ p {
   color: #939CAA;
 }
 
+a {
+  font-family: "space mono", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
 
 /* a, ul */
 
@@ -132,6 +137,10 @@ ul {
   bottom: 15px;
   left: -85%;
   z-index: 1;
+}
+
+.banner--round {
+  display: none;
 }
 
 
@@ -281,6 +290,155 @@ footer .logo {
 }
 
 
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+  .container {
+    padding: 0 98px;
+  }
+
+
+  /* Typo */
+
+  h1 {
+    font-size: 3.5rem;
+    letter-spacing: -2.5px;
+  }
+
+  h2 {
+    font-size: 3rem;
+    letter-spacing: -2.14px;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    letter-spacing: -1.07px;
+  }
+
+
+  /* Header */
+
+  header .container {
+    padding: 0 40px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .nav {
+    display: block;
+    margin-right: 100px;
+  }
+
+  .nav ul {
+    display: flex;
+    gap: 32px;
+  }
+
+  .btn--header {
+    margin: 0;
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+
+  /* Banner */
+
+  .banner--infos button {
+    margin-bottom: 40px;
+  }
+
+  .banner--arrow {
+    left: -10%;
+  }
+
+  .banner--round {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    z-index: 1;
+  }
+  
+  /* Section 1 */
+
+  .use {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    text-align: left;
+    max-width: 100%;
+    gap: 80px;
+  }
+
+  .use--text {
+    max-width: 350px;
+  }
+
+  .icons {
+    width: 96px;
+    height: 96px;
+  }
+
+  .icons img {
+    width: 40px;
+  }
+
+  
+
+
+
+
+
+  /*
+
+
+  .benefits {
+    margin-bottom: 160px;
+  }
+
+  .arrow-right {
+    top: 200px;
+    right: -60px;
+  }
+
+  .arrow-left {
+    top: 0;
+    left: -130px;
+  }
+
+  .arrow-right-2 {
+    top: 10px;
+    right: -180px;
+  }
+
+  .text {
+    padding: 88px 0 120px;
+  }
+
+  .app {
+    margin-top: 64px;
+  }
+
+  footer .nav--footer ul {
+    flex-direction: row;
+  }
+
+  footer .social {
+    margin-top: 64px;
+  }*/
+}
 
 
 
