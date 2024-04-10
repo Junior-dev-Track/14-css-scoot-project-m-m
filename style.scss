@@ -103,6 +103,11 @@ ul {
 
 .logo {
   margin: auto;
+  height: 20px;
+}
+
+.logo img {
+  height: 20px;
 }
 
 
@@ -115,6 +120,10 @@ ul {
   background-position: right;
   z-index: -1;
 } 
+
+.banner .container {
+  position: relative;
+}
 
 .banner::after {
   content: "";
@@ -137,11 +146,15 @@ ul {
 .banner--arrow {
   position: absolute;
   bottom: 15px;
-  left: -85%;
+  left: -300px;
   z-index: 1;
 }
 
 .banner--round {
+  display: none;
+}
+
+.line {
   display: none;
 }
 
@@ -271,6 +284,10 @@ button {
   gap: 12px;
 }
 
+.app img {
+  height: 40px;
+}
+
 
 /* Footer */
 
@@ -348,11 +365,16 @@ footer .logo {
 
   .logo {
     margin: 0;
+    height: 29px;
+  }
+
+  .logo img {
+    height: 29px;
   }
 
   .nav {
     display: block;
-    margin-right: 100px;
+    margin-right: 50px;
   }
 
   .nav ul {
@@ -476,6 +498,7 @@ footer .logo {
     padding: 88px 58px;
   }
 
+
   /* Footer */
 
   footer {
@@ -523,22 +546,157 @@ footer .logo {
 
   .nav {
     display: block;
+    margin-right: 450px;
+  }
+
+  /* Banner */
+
+  .banner--infos {
+    text-align: left;
+    padding: 150px 0;
+
+  }
+
+  .banner--infos h1 {
+    width: 500px;
+  }
+
+  .banner--infos p {
+    width: 400px;
+    margin-left: 100px;
+  }
+
+  .banner--infos button {
+    margin-left: 100px;
+  }
+  
+  .banner--arrow {
+    left: 50%;
+    bottom: 180px;
+  }
+  
+  .banner--round {
+    bottom: 190px;
+  }
+
+  .line {
+    display: block;
+    position: absolute;
+    left: 0%;
+    bottom: 300px;
+    z-index: 1;
+  }
+  
+  /* Section 1 */
+
+  .section-1 {
+    padding: 160px 0;
+  }
+
+  .section-1 .container {
+    gap: 30px;
+    flex-direction: row;
+    justify-content: start;
+    position: relative;
+  }
+
+  .use {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    max-width: 100%;
+    gap: 40px;
+  }
+
+  .use--text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icons::before {
+    top: 14%;
+    left: 0;
+    height: 0;
+    width: 974px;
+  }
+
+  .icons {
+    margin: 0;
+  }
+
+  /* Section 2 */
+
+  .benefits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 220px;
+  }
+
+  .benefits--text {
+    order: 1;
+    text-align: left;
+    width: 445px;
+  }
+
+  .img--round-1 {
+    order: 2;
+  }
+
+  .arrow-right-big {
+    bottom: 0;
+    right: -160px;
+    transform: scale(1);
+  }
+
+  .round {
+    right: -160px;
+  }
+
+  .round-left {
+    left: -160px;
+  }
+
+
+  /* CTA */
+
+  .text {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .text h2 {
+    width: 415px;
+    text-align: left;
+  }
+
+  .section-3::after {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .app {
+    margin-top: 0;
+  }
+
+  .app img {
+    height: 56px;
+  }
+  
+
+  /* Footer */
+
+  footer .container {
+    padding: 35px 160px;
+  }
+
+  .nav--footer {
     margin-right: 500px;
   }
 
-  .nav ul {
-    display: flex;
-    gap: 32px;
-  }
-
-  .btn--header {
-    margin: 0;
-    display: block;
-  }
-
-  .menu {
-    display: none;
-  }
 
 
 
