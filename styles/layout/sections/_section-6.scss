@@ -1,0 +1,66 @@
+
+/* Section 6 */
+
+.section-6 {
+    text-align: center;
+    margin-bottom: 120px;
+}
+  
+.jobs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+  
+.job--single {
+    padding: 32px;
+    background-color: #F2F5F9;
+    position: relative;
+    width: 100%;
+}
+  
+.job--single p {
+    color: #495567;
+    margin-top: 5px;
+}
+  
+.job--single button {
+    margin-top: 16px;
+    width: 100%;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+  .section-6 .container{
+    padding: 0 40px;
+  }
+  
+  .job--single {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .job-text {
+    text-align: left;
+  }
+  
+  .job--single button {
+    width: auto;
+    margin-top: 0;
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  .section-6 .container {
+    padding: 0 160px;
+  }
+
+}

@@ -1,0 +1,67 @@
+
+/* Section 4 */
+
+.section-4 {
+    text-align: center;
+    margin-bottom: 120px;
+}
+  
+.values {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-direction: column;
+}
+
+.values img {
+    position: relative;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+  
+.section-4 h2 {
+    margin-bottom: 60px;  
+}
+  
+.number {
+    width: 96px;
+    height: 96px;
+    padding: 34px;
+    text-align: center;
+    background-color: #FCB72B;
+    border-radius: 100%;
+    margin: auto;
+    margin-bottom: 16px;
+    margin-top: -60px;
+    z-index: 1;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+  .values--text {
+    width: 457px;
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  .section-4 h2 {
+    margin-bottom: 100px;
+  }
+  
+  .values {
+    gap: 30px;
+    flex-direction: row;
+  }
+
+  .values--text {
+    width: auto;
+  }
+
+}

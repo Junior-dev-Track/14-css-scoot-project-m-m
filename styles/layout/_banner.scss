@@ -1,0 +1,160 @@
+
+/* Banner */
+
+.banner {
+    position: relative;
+} 
+  
+.banner .container {
+    position: relative;
+}
+
+.banner--img {
+  position: absolute;
+  background-image: url('assets/img-banner-home.png');
+  background-size: cover;
+  background-position: right;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+  
+.banner--img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2F3B59;
+    opacity: .75;
+}
+  
+.banner--infos {
+    position: relative;
+    text-align: center;
+    padding: 115px 0 180px;
+    z-index: 2;
+}
+  
+.banner--arrow {
+    position: absolute;
+    bottom: 15px;
+    left: -300px;
+    z-index: 1;
+}
+  
+.banner--round {
+    display: none;
+}
+  
+.line {
+    display: none;
+}
+  
+.banner-about {
+    background-image: url('assets/banner-about.png');
+    background-position: center;
+    background-size: 150%;
+}
+  
+.banner--infos-about {
+    padding: 60px 0;
+}
+  
+.banner-job {
+    background-image: url('assets/banner-about.png');
+    background-position: bottom;
+    background-size: 150%;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+  .banner--infos button {
+    margin-bottom: 40px;
+  }
+
+  .banner--arrow {
+    left: -10%;
+  }
+
+  .banner--round {
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    z-index: 1;
+  }
+
+  .banner-about {
+    background-position: 60% 44%;
+    background-size: 200%;
+  }
+
+  .banner--infos-about {
+    text-align: left;
+  }
+
+  .banner-job {
+    background-position: 60% 95%;
+    background-size: 200%;
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  .banner--infos {
+    text-align: left;
+    padding: 150px 0;
+  }
+
+  .banner--infos h1 {
+    width: 500px;
+  }
+
+  .banner--infos p {
+    width: 400px;
+    margin-left: 100px;
+  }
+
+  .banner--infos button {
+    margin-left: 100px;
+  }
+  
+  .banner--arrow {
+    left: 50%;
+    bottom: 180px;
+  }
+  
+  .banner--round {
+    bottom: 190px;
+  }
+
+  .line {
+    display: block;
+    position: absolute;
+    left: 0%;
+    bottom: 300px;
+    z-index: 1;
+  }
+
+  .banner--infos-about {
+    padding: 72px 0;
+  }
+
+  .banner-round-page {
+    bottom: 60px;
+  }
+
+  .banner-job {
+    background-size: 100%;
+  }
+
+}
+  

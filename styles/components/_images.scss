@@ -1,0 +1,47 @@
+
+/* Images */
+
+.img--round img{
+    border-radius: 100%;
+    margin-bottom: 56px;
+}
+
+.img--map {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+  
+.img--map-big {
+    display: none;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+    .img--round {
+        width: 445px;
+        margin: auto;
+    }
+
+    .img--map {
+      display: none;
+    }
+  
+    .img--map-big {
+      display: block;
+      margin: auto;
+    }
+  
+  }
+
+@media (min-width: 1440px) {
+
+    .img--round-1 {
+        order: 2;
+    }
+
+}
+
