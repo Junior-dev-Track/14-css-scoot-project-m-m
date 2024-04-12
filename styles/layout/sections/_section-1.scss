@@ -1,4 +1,6 @@
 
+@import "styles/base/colors";
+
 /* Section 1 */
 
 .section-1{
@@ -26,7 +28,7 @@
     display: flex;
     justify-content: center; 
     align-items: center;
-    background-color: #FCB72B;
+    background-color: $yellow;
     width: 56px;
     height: 56px;
     border-radius: 100%;
@@ -66,7 +68,7 @@
     position: absolute;
     top: 0;
     bottom: 25%;
-    border: 7px solid #E5ECF4;
+    border: 7px solid $light-blue;
     height: auto;
     z-index: -1;
   }

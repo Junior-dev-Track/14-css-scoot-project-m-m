@@ -1,9 +1,11 @@
 
+@import "styles/base/colors";
+
 /* CTA */
 
 .section-3 {
     position: relative;
-    background-color: #495567;
+    background-color: $color-title;
 }
   
 .section-3::after {

@@ -1,4 +1,6 @@
 
+@import "styles/base/colors";
+
 /* Section 4 */
 
 .section-4 {
@@ -30,13 +32,13 @@
     height: 96px;
     padding: 34px;
     text-align: center;
-    background-color: #FCB72B;
+    background-color: $yellow;
     border-radius: 100%;
     margin: auto;
     margin-bottom: 16px;
     margin-top: -60px;
     z-index: 1;
-}
+  }
 
 
 /* Media Queries */

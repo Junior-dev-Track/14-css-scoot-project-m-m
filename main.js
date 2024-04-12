@@ -1,24 +1,78 @@
-import './style.scss'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import './style.scss';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
 
-setupCounter(document.querySelector('#counter'))
+/* Burger Menu */
+
+
+document.getElementById('menu-burger').addEventListener('click', function() {
+  var nav = document.getElementById('nav-menu');
+  var overlay = document.getElementById('overlay');
+  var body = document.body;
+  if (nav.style.transform === 'translateX(0px)') {
+    nav.style.transform = 'translateX(-256px)';
+    overlay.style.display = 'none';
+    body.classList.remove('no-scroll');
+  } else {
+    nav.style.transform = 'translateX(0px)';
+    overlay.style.display = 'block';
+    body.classList.add('no-scroll');
+  }
+});
+
+/* Close Menu */
+
+var menuBurger = document.getElementById('menu-burger');
+var navMenu = document.getElementById('nav-menu');
+
+menuBurger.addEventListener('click', function() {
+  if (navMenu.classList.contains('nav-menu-active')) {
+    navMenu.classList.remove('nav-menu-active');
+    menuBurger.src = 'assets/menu.svg';
+  } else {
+    navMenu.classList.add('nav-menu-active');
+    menuBurger.src = 'assets/close.svg';
+  }
+});
+
+
+/* Header Scroll */
+
+let lastScrollTop = 0;
+const header = document.querySelector('#header');
+
+window.addEventListener('scroll', () => {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    header.classList.add('hide-header');
+  } else {
+    header.classList.remove('hide-header');
+  }
+  lastScrollTop = scrollTop;
+});
+
+
+/* FAQ Accordion */
+
+var answers = document.querySelectorAll('.answer');
+
+answers.forEach(function(answer) {
+  var response = answer.querySelector('p');
+  response.style.display = 'none'; 
+
+  answer.addEventListener('click', function() {
+    // Close all answers
+    answers.forEach(function(otherAnswer) {
+      if (otherAnswer !== answer) {
+        otherAnswer.querySelector('p').style.display = 'none';
+        otherAnswer.classList.remove('open');
+      }
+    });
+
+    // Open or close the clicked answer
+    response.style.display = response.style.display === 'none' ? 'block' : 'none';
+    answer.classList.toggle('open');
+  });
+});
+
+
+

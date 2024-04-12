@@ -1,9 +1,11 @@
 
+@import "styles/base/colors";
+
 /* Button */ 
 
 button {
-    background-color: #FCB72B;
-    color: #ffffff;
+    background-color: $yellow;
+    color: $white;
     padding: 14px 40px;
     border: none;
     text-align: center;
@@ -13,8 +15,8 @@ button {
 
 button:hover {
   background-color: transparent;
-  color: #FCB72B;
-  box-shadow: inset 0 0 0 3px #FCB72B;
+  color: $yellow;
+  box-shadow: inset 0 0 0 3px $yellow;
 }
 
 

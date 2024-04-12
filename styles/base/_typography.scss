@@ -1,4 +1,6 @@
 
+@import "colors";
+
 /* Typo */
 
 body {
@@ -14,7 +16,7 @@ h1 {
     font-size: 2.5rem;
     line-height: 1;
     letter-spacing: -1.79px;
-    color: #ffffff;
+    color: $white;
   }
   
   h2 {
@@ -23,7 +25,7 @@ h1 {
     font-size: 2rem;
     line-height: 1;
     letter-spacing: -1.43px;
-    color: #495567;
+    color: $color-title;
   }
   
   h3 {
@@ -32,7 +34,7 @@ h1 {
     font-size: 1.5rem;
     letter-spacing: -1.79px;
     line-height: 48px;
-    color: #495567;
+    color: $color-title;
   }
   
   h4 {
@@ -41,21 +43,21 @@ h1 {
     font-size: 1.3rem;
     line-height: 28px;
     letter-spacing: -0.89px;
-    color: #495567;
+    color: $color-title;
   }
   
   .banner p {
-    color: #ffffff;
+    color: $white;
   }
   
   .text h2 {
-    color: #ffffff;
+    color: $white;
   }
   
   p {
     margin-top: 24px;
     font-weight: 400;
-    color: #939CAA;
+    color: $grey;
   }
   
   a {

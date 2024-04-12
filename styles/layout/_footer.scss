@@ -1,14 +1,16 @@
 
+@import "styles/base/colors";
+
 /* Footer */
 
 footer {
-    background-color: #333A44;
+    background-color: $color-background-dark;
     padding: 64px 0 88px;
     text-align: center;
-}
+  }
   
 footer .logo {
-    color: #ffffff;
+    color: $white;
 }
   
 .nav--footer ul {
@@ -22,8 +24,13 @@ footer .logo {
 .social {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 24px;
     margin-top: 85px;
+}
+
+.social a:hover svg path {
+  fill: $light-blue;
 }
 
 
@@ -56,10 +63,6 @@ footer .logo {
 
   .social {
     margin-top: 0;
-  }
-
-  .social img:hover {
-    color: #E5ECF4;
   }
 
 }

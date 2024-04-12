@@ -2,42 +2,42 @@
 
 /* Fonts */
 
-@import url(styles/vendors/_font.scss);
+@import "styles/vendors/font";
 
 
 /* Base */
 
-@import url(styles/base/_reset.scss);
-@import url(styles/base/_base.scss);
+@import "styles/base/reset";
+@import "styles/base/base";
 
-@import url(styles/base/_typography.scss);
+@import "styles/base/typography";
+
+@import "styles/base/colors";
 
 
 /* Layout */
 
-@import url(styles/layout/_header.scss);
-@import url(styles/layout/_banner.scss);
-@import url(styles/layout/_cta.scss);
-@import url(styles/layout/_footer.scss);
+@import "styles/layout/header";
+@import "styles/layout/banner";
+@import "styles/layout/cta";
+@import "styles/layout/footer";
 
 /* Sections */
 
-@import url(styles/layout/sections/_section-1.scss);
-@import url(styles/layout/sections/_section-2.scss);
-@import url(styles/layout/sections/_section-4.scss);
-@import url(styles/layout/sections/_section-5.scss);
-@import url(styles/layout/sections/_section-6.scss);
-@import url(styles/layout/sections/_section-7.scss);
-@import url(styles/layout/sections/_section-8.scss);
+@import "styles/layout/sections/section-1";
+@import "styles/layout/sections/section-2";
+@import "styles/layout/sections/section-4";
+@import "styles/layout/sections/section-5";
+@import "styles/layout/sections/section-6";
+@import "styles/layout/sections/section-7";
+@import "styles/layout/sections/section-8";
 
 
 /* Components */
 
-@import url(styles/components/_buttons.scss);
-@import url(styles/components/_arrows.scss);
-@import url(styles/components/_images.scss);
-
-
+@import "styles/components/buttons";
+@import "styles/components/arrows";
+@import "styles/components/images";
 
 
 

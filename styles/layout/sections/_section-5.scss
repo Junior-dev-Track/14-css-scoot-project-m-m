@@ -1,4 +1,6 @@
 
+@import "styles/base/colors";
+
 /* Section 5 */
 
 .section-5 {
@@ -8,6 +10,10 @@
   
 .questions {
     margin-top: 48px;
+}
+
+.answer p {
+    display: none;
 }
   
 .answers {
@@ -22,9 +28,14 @@
   
 .answer {
     padding: 32px;
-    background-color: #F2F5F9;
+    background-color: $very-light-blue;
     position: relative;
     width: 100%;
+}
+
+.answer:hover {
+    background-color: $light-beige;
+    cursor: pointer;
 }
   
 .answer h4 {
@@ -41,6 +52,14 @@
     background-repeat: no-repeat;
     background-size: contain;
     width: 16px;
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+}
+
+.answer.open::after {
+    
+    transform: scaleY(-1);
 }
 
 

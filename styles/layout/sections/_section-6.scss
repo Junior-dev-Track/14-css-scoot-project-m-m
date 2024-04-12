@@ -1,4 +1,6 @@
 
+@import "styles/base/colors";
+
 /* Section 6 */
 
 .section-6 {
@@ -16,13 +18,13 @@
   
 .job--single {
     padding: 32px;
-    background-color: #F2F5F9;
+    background-color: $very-light-blue;
     position: relative;
     width: 100%;
 }
   
 .job--single p {
-    color: #495567;
+    color: $color-title;
     margin-top: 5px;
 }
   

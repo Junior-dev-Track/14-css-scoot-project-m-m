@@ -1,8 +1,10 @@
 
+@import "colors";
+
 /* Base */
 
 body {
-    background-color: #ffffff;
+    background-color: $white;
 }
 
 .container {
@@ -21,11 +23,11 @@ img {
 
 a {
   text-decoration: none;
-  color: #939CAA;
+  color: $grey;
 }
 
 a:hover {
-  color: #FCB72B;
+  color: $yellow;
 }
 
 ul {
