@@ -10,8 +10,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         second: resolve(__dirname, 'about.html'),
-        third: resolve(__dirname, 'career.html'),
-        fourth: resolve(__dirname, 'location.html'),
+        third: resolve(__dirname, 'careers.html'),
+        fourth: resolve(__dirname, 'locations.html'),
       },
     },
   },
